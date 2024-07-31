@@ -1,0 +1,23 @@
+package lpa2;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class YuriMc {
+
+		public static void main(String[] args) {
+		ArrayList<Integer> numeros = new ArrayList<>();
+		Scanner ler = new Scanner(System.in);
+		int numb;
+		int soma=0;
+		
+		for (int i = 1; i <= 10; i++) {
+			System.out.println("Digite um número");
+			numb= ler.nextInt();
+			numeros.add(numb);
+		}	
+		for (int numero : numeros) {
+			soma = soma + numero;
+		}
+			System.out.println(soma);                                                                   
+	}
+
+}
